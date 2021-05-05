@@ -1,0 +1,23 @@
+Proceso sin_titulo
+	Definir vector1, vector2 Como Caracter;
+	Dimension  vector1[5], vector2[5];
+	Definir  i, j  Como Entero;
+	Para i <- 0 hasta 4 Hacer
+		Escribir Sin Saltar "Dame la cadena  ", i+1, " : ";
+		Leer vector1[i];
+		// creas el primer vector1
+	FinPara
+	j <- 0;
+	// luego lo incrementas en la linea20.
+	Para  i <- 4 hasta 0 Con Paso -1 Hacer
+		vector2[j]<- vector1[i];
+		j <- j+1;
+		
+		// empiezas desde el final para que vaya hacia atras
+	FinPara
+	
+	Para  j <- 0 hasta 4 hacer 
+		Escribir Sin Saltar vector2[j];
+		//esta es la solucion con la que escribes el vector inverso
+	FinPara
+FinProceso
